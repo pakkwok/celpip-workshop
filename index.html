@@ -5,186 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>思培 (CELPIP) 寫作試準備線上工作坊 | MOCHI Academy</title>
     
-    <!-- Facebook Open Graph Meta Tags (For Facebook Promotion) -->
-    <meta property="og:title" content="思培 (CELPIP) 寫作試準備線上工作坊">
-    <meta property="og:description" content="為您的入籍與永久居留申請奠定自信基礎">
-    <meta property="og:url" content="https://amazingmochi.ca">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="思培 (CELPIP) 寫作試準備線上工作坊 | MOCHI Academy">
+    <meta property="og:description" content="官方認證的思培導師，為大家主持一場兩小時的免費線上培訓">
+    <!-- Updated with the provided image for thumbnails (WhatsApp, Facebook, etc.) -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/pakkwok/celpip-workshop/refs/heads/main/Screenshot%202026-05-06%20071135.png">
+    <!-- Important: Update this URL once your GitHub Pages is published -->
+    <meta property="og:url" content="https://pakkwok.github.io/celpip-workshop/">
     <meta property="og:type" content="website">
-    
-    <!-- Explicitly Defined Image Properties to resolve "Inferred Property" warnings -->
-    <meta property="og:image" content="https://raw.githubusercontent.com/pakkwok/emails/refs/heads/main/Screenshot%202026-05-06%20071135.png">
-    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/pakkwok/emails/refs/heads/main/Screenshot%202026-05-06%20071135.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="CELPIP Writing Workshop Poster">
 
+    <!-- Loading Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Font Configuration -->
     <style>
-        /* MOCHI Academy - Minimalist, Scholarly & Pastoral Theme */
-        :root {
-            --primary-navy: #1B2A47;
-            --warm-orange: #D97736;
-            --soft-cream: #FDFBF7;
-            --text-main: #333333;
-            --card-bg: #FFFFFF;
-        }
-
         body {
             font-family: 'Helvetica Neue', Helvetica, 'PingFang TC', 'Microsoft JhengHei', Arial, sans-serif;
-            background-color: var(--soft-cream);
-            color: var(--text-main);
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px 20px;
-            -webkit-font-smoothing: antialiased;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Container for Main Content */
-        .content-container {
-            max-width: 700px;
-            width: 100%;
-            padding: 40px;
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-            text-align: center;
-        }
-
-        /* Typography */
-        h1 {
-            color: var(--primary-navy);
-            font-size: 28px;
-            margin-top: 0;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-
-        .subtitle {
-            color: var(--warm-orange);
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-
-        /* Centered Poster Image */
-        .poster-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            margin-bottom: 35px;
-        }
-
-        /* Primary Registration Button */
-        .registration-container {
-            margin-bottom: 40px;
-        }
-
-        .registration-button {
-            display: inline-block;
-            background-color: var(--warm-orange);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 16px 45px;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(217, 119, 54, 0.3);
-        }
-
-        .registration-button:hover {
-            background-color: #c2662d;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(217, 119, 54, 0.4);
-        }
-
-        /* Footer / Links Section */
-        .footer-section {
-            padding-top: 30px;
-            border-top: 1px solid #EAEAEA;
-        }
-
-        .website-link {
-            display: block;
-            color: var(--primary-navy);
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            margin-bottom: 25px;
-            transition: color 0.3s ease;
-        }
-
-        .website-link:hover {
-            color: var(--warm-orange);
-        }
-
-        /* Subscribe Button */
-        .subscribe-button {
-            display: inline-block;
-            background-color: var(--primary-navy);
-            color: white;
-            text-decoration: none;
-            padding: 12px 35px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        .subscribe-button:hover {
-            background-color: #121c2e;
-            transform: translateY(-2px);
-        }
-
-        /* Responsive Design for Mobile */
-        @media (max-width: 600px) {
-            .content-container {
-                padding: 30px 15px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            body {
-                padding: 20px 10px;
-            }
-            .registration-button {
-                font-size: 18px;
-                padding: 14px 35px;
-            }
         }
     </style>
 </head>
-<body>
+<body class="bg-[#FDFBF7] text-[#333333] leading-relaxed flex justify-center items-center min-h-screen p-5 sm:p-10 m-0 box-border">
 
-    <!-- Main Content -->
-    <main class="content-container">
+    <main class="w-full max-w-[700px] p-6 sm:p-10 bg-white rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.06)] text-center box-border">
         
-        <h1>思培 (CELPIP) 寫作試準備線上工作坊</h1>
-        <div class="subtitle">為您的入籍與永久居留申請奠定自信基礎</div>
+        <h1 class="text-[#1B2A47] text-2xl sm:text-[28px] font-bold mb-2">思培 (CELPIP) 寫作試準備線上工作坊</h1>
+        <div class="text-[#D97736] text-lg sm:text-[18px] font-bold mb-8">官方認證的思培導師，為大家主持一場兩小時的免費線上培訓</div>
 
-        <!-- Central Poster Image -->
-        <img src="https://raw.githubusercontent.com/pakkwok/emails/refs/heads/main/Screenshot%202026-05-06%20071135.png" alt="CELPIP Writing Workshop Poster" class="poster-image">
+        <!-- Updated Content Image -->
+        <img 
+            src="https://raw.githubusercontent.com/pakkwok/celpip-workshop/refs/heads/main/Screenshot%202026-05-06%20071135.png" 
+            alt="CELPIP Workshop Poster" 
+            class="w-full h-auto max-w-full rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.1)] mb-9 object-cover"
+        >
 
-        <!-- Registration Button -->
-        <div class="registration-container">
-            <a href="https://forms.gle/R9HKi3EmQUU5mPBY6" target="_blank" class="registration-button">
+        <div class="flex flex-col gap-4 items-center mb-10">
+            <!-- Registration Button - Updated Link -->
+            <a 
+                href="https://forms.gle/TuUuWURJyGg2dgZg8" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="bg-[#D97736] hover:bg-[#c2662d] text-white py-4 px-8 text-[18px] sm:text-[20px] font-bold rounded-full transition-all duration-300 shadow-[0_4px_15px_rgba(217,119,54,0.3)] hover:-translate-y-0.5 w-full sm:w-4/5 max-w-[300px] flex justify-center items-center"
+            >
                 👉 立即登記報名 (Register Here)
             </a>
+            
+            <!-- Share Button -->
+            <button 
+                class="bg-transparent hover:bg-[#1B2A47] text-[#1B2A47] hover:text-white border-2 border-[#1B2A47] py-3 px-8 text-[16px] sm:text-[18px] font-bold rounded-full transition-all duration-300 w-full sm:w-4/5 max-w-[300px] flex justify-center items-center gap-2 group cursor-pointer"
+                onclick="copyShareLink()"
+            >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-colors">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                <span id="share-text">Share Event Link</span>
+            </button>
         </div>
 
-        <!-- Footer Section (Website & Subscribe) -->
-        <div class="footer-section">
-            <a href="https://amazingmochi.ca" target="_blank" class="website-link">amazingmochi.ca</a>
-            
-            <a href="https://forms.gle/gd7nUgBFRkWhiadT8" target="_blank" class="subscribe-button">
+        <div class="pt-8 border-t border-[#EAEAEA] flex flex-col items-center gap-6">
+            <a 
+                href="https://amazingmochi.ca" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block text-[#1B2A47] text-[18px] font-bold decoration-transparent hover:underline transition-all"
+            >
+                amazingmochi.ca
+            </a>
+            <a 
+                href="https://sites.google.com/amazingmochi.ca/mochiemails/home" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="bg-[#1B2A47] hover:bg-[#111b2d] text-white py-3 px-8 text-[16px] font-bold rounded-full transition-colors inline-block"
+            >
                 Subscribe to MOCHi Emails
             </a>
         </div>
-
     </main>
+
+    <script>
+        function copyShareLink() {
+            // Using document.execCommand('copy') as a safer fallback for cross-origin iFrames
+            const urlToCopy = window.location.href;
+            const tempInput = document.createElement("input");
+            tempInput.value = urlToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+            try {
+                document.execCommand("copy");
+                const shareText = document.getElementById("share-text");
+                const originalText = "Share Event Link"; // Storing explicitly in case of rapid clicks
+                
+                shareText.innerText = "✅ Link Copied!";
+                
+                // Revert back after 2 seconds
+                setTimeout(function() {
+                    shareText.innerText = originalText;
+                }, 2000);
+            } catch (err) {
+                console.error('Could not copy text: ', err);
+                alert("Failed to copy. Please manually copy the URL.");
+            }
+            
+            // Clean up the temporary input field
+            document.body.removeChild(tempInput);
+        }
+    </script>
 
 </body>
 </html>
